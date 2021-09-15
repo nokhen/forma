@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Страница бронирования</title>
+</head>
+<body>
+    <h1>Страница бронирования</h1>
+    <fieldset>
+    <legend>Данные о заказе</legend> 
+    <label for="region-select">Регион</label>
+    <select name="regions" id="region-select">
+    <option value="">...</option>
+    <option value="83">Ханты-Мансийский АО - Югра</option>
+    <option value="82">Ненецкий АО</option>
+    <option value="84">Чукотский АО</option>
+    <option value="85">Ямало-Ненецкий АО</option>
+</select>
+<p>
+    <label for="region-select">Адрес кемпинга</label>
+    <select name="regions" id="region-select">
+    <option value="">...</option>
+    <option value="83">г. Ханты-Мансийск, ул. Мира, д. 108/2</option>
+    <option value="82">г. Нарьян-Мар, ул. Смидовича, д. 25</option>
+    <option value="84">г. Анадырь, ул. Южная, д. 15</option>
+    <option value="85">с. Яр-Сале ул. Советская, д. 27а</option>
+</select>
+</p>
+<p>
+    <label for="date">Дата заселения </label>
+    <input type="date" id="date" name="date"/>
+</p>
+<p>
+    <label for="date">Дата выселения </label>
+    <input type="date" id="date" name="date"/>
+</p>
+<form action="" method="get" class="cost">
+    <div class="form-example">
+      <label for="name">Стоимость </label>
+      <input type="text" name="name" id="name" required> рублей.
+    </div>
+</fieldset>
+<fieldset>
+<legend>Данные о постояльцах</legend>
+<form action="" method="get" class="familiya">
+    <div class="form-example">
+      <label for="name">Фамилия </label>
+      <input type="text" name="name" id="name" required>
+    </div>
+<form action="" method="get" class="imya">
+    <div class="form-example">
+        <label for="name">Имя </label>
+        <input type="text" name="name" id="name" required>
+    </div>
+<form action="" method="get" class="otchestvo">
+    <div class="form-example">
+        <label for="name">Отчество </label>
+        <input type="text" name="name" id="name" required>
+    </div>
+<p>
+    <label for="date">Дата рождения </label>
+    <input type="date" id="date" name="date"/>
+</p>
+<form action="" method="get" class="nomerdok">
+    <div class="form-example">
+        <label for="name">Номер документа </label>
+        <input type="text" name="name" id="name" required>
+    </div>
+</fieldset>
+<fieldset>
+<legend>Выбор дополнительных услуг</legend>
+
+<div>
+  <input type="checkbox" id="food" name="food">
+  <label for="scales">Питание</label>
+</div>
+
+<div>
+  <input type="checkbox" id="medcine" name="medcine">
+  <label for="horns">Медицинские услуги</label>
+</div>
+</fieldset>
+<fieldset>
+<legend>Добавление/Удаление человека в бронь</legend>
+<div class="counter">
+    <input type="number" min="1" max="1000000" step="1" value="1" class="num"	>
+  </div>
+</fieldset>
+<h2>Итоговая стоимость</h2>
+<p>15678 рублей.</p>
+<p>
+    <button class="button2" type="button">Оформить бронирование</button>
+</p>
+</body>
+</html>
